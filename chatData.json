@@ -124,13 +124,14 @@
             "role": "assistant",
             "stepNumber": 17,
             "slide": "Opening Visual",
+            "presentationStyle": "popup",
+            "popupFullscreenMedia": true,
             "content": "It starts with a visual cue. Before code, you are invited to notice the act of looking closely.",
             "deferMediaUntilSpeechDone": true,
             "media": [
                 {
                     "type": "video",
                     "src": "assets/media1.mp4",
-                    "fullscreenOnPlay": true,
                     "caption": "Opening video"
                 }
             ]
