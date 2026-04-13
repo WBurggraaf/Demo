@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#11161b"/>
+  <text x="100" y="140" fill="#effff8" font-family="Segoe UI, Arial, sans-serif" font-size="58" font-weight="700">Theoretical model</text>
+  <text x="100" y="205" fill="#a9c8bb" font-family="Segoe UI, Arial, sans-serif" font-size="28">Estimate uOps, map them to equivalent active time, apply modeled power, scale to mWh.</text>
+  <rect x="100" y="280" width="430" height="390" rx="28" fill="#1b2630" stroke="#68c7ff"/>
+  <text x="135" y="360" fill="#e8f6ff" font-family="Segoe UI, Arial, sans-serif" font-size="36" font-weight="700">Baseline</text>
+  <text x="135" y="425" fill="#d2e5f2" font-family="Segoe UI, Arial, sans-serif" font-size="28">1 GHz</text>
+  <text x="135" y="475" fill="#d2e5f2" font-family="Segoe UI, Arial, sans-serif" font-size="28">1 core</text>
+  <text x="135" y="525" fill="#d2e5f2" font-family="Segoe UI, Arial, sans-serif" font-size="28">1.2 V</text>
+  <text x="135" y="590" fill="#9fc1d6" font-family="Segoe UI, Arial, sans-serif" font-size="24">DVFS applied as a multiplier, not ignored.</text>
+  <rect x="610" y="280" width="430" height="390" rx="28" fill="#1f2b24" stroke="#2fd1a8"/>
+  <text x="645" y="360" fill="#ecfff7" font-family="Segoe UI, Arial, sans-serif" font-size="36" font-weight="700">Interpretation rule</text>
+  <text x="645" y="435" fill="#d5efe2" font-family="Segoe UI, Arial, sans-serif" font-size="28">Not direct electrical measurement</text>
+  <text x="645" y="490" fill="#d5efe2" font-family="Segoe UI, Arial, sans-serif" font-size="28">Transparent estimate of wasted work</text>
+  <text x="645" y="545" fill="#d5efe2" font-family="Segoe UI, Arial, sans-serif" font-size="28">Useful for prioritization</text>
+  <rect x="1120" y="280" width="360" height="390" rx="28" fill="#31271d" stroke="#ffb84d"/>
+  <text x="1155" y="360" fill="#fff5df" font-family="Segoe UI, Arial, sans-serif" font-size="36" font-weight="700">Output</text>
+  <text x="1155" y="435" fill="#f3dfbf" font-family="Segoe UI, Arial, sans-serif" font-size="28">modeled active time</text>
+  <text x="1155" y="490" fill="#f3dfbf" font-family="Segoe UI, Arial, sans-serif" font-size="28">modeled mWh</text>
+  <text x="1155" y="545" fill="#f3dfbf" font-family="Segoe UI, Arial, sans-serif" font-size="28">scaled kWh and CO2e</text>
+</svg>

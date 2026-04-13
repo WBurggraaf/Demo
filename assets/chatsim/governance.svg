@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#10161b"/>
+  <text x="800" y="140" text-anchor="middle" fill="#f2fff8" font-family="Segoe UI, Arial, sans-serif" font-size="58" font-weight="700">PR review / benchmark / observability / energy-risk gate</text>
+  <rect x="120" y="340" width="280" height="180" rx="28" fill="#1a2630" stroke="#68c7ff"/>
+  <rect x="470" y="340" width="280" height="180" rx="28" fill="#1f2b24" stroke="#2fd1a8"/>
+  <rect x="820" y="340" width="280" height="180" rx="28" fill="#30281d" stroke="#ffb84d"/>
+  <rect x="1170" y="340" width="300" height="180" rx="28" fill="#2d2133" stroke="#d58cff"/>
+  <g font-family="Segoe UI, Arial, sans-serif" text-anchor="middle" font-size="34" font-weight="700">
+    <text x="260" y="430" fill="#e8f6ff">PR review</text>
+    <text x="610" y="430" fill="#ecfff7">benchmark</text>
+    <text x="960" y="430" fill="#fff4de">observability</text>
+    <text x="1320" y="430" fill="#f7e9ff">energy-risk gate</text>
+  </g>
+</svg>

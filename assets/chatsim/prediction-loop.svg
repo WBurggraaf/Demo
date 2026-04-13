@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#0f151a"/>
+  <text x="800" y="150" text-anchor="middle" fill="#e9fff8" font-family="Segoe UI, Arial, sans-serif" font-size="60" font-weight="700">Static analysis + observability -> energy estimate -> engineering action</text>
+  <rect x="120" y="310" width="320" height="170" rx="26" fill="#1a2630" stroke="#68c7ff"/>
+  <text x="280" y="390" text-anchor="middle" fill="#dff5ff" font-family="Segoe UI, Arial, sans-serif" font-size="38" font-weight="700">Static analysis</text>
+  <text x="280" y="435" text-anchor="middle" fill="#bdd5e2" font-family="Segoe UI, Arial, sans-serif" font-size="24">loops, helpers, syscalls, copies</text>
+  <rect x="530" y="310" width="320" height="170" rx="26" fill="#1f2d27" stroke="#2fd1a8"/>
+  <text x="690" y="390" text-anchor="middle" fill="#e9fff8" font-family="Segoe UI, Arial, sans-serif" font-size="38" font-weight="700">Observability</text>
+  <text x="690" y="435" text-anchor="middle" fill="#bdd5c8" font-family="Segoe UI, Arial, sans-serif" font-size="24">frequency, waits, idle ratio, pressure</text>
+  <rect x="940" y="310" width="240" height="170" rx="26" fill="#362c1c" stroke="#ffb84d"/>
+  <text x="1060" y="390" text-anchor="middle" fill="#fff2d8" font-family="Segoe UI, Arial, sans-serif" font-size="38" font-weight="700">Estimate</text>
+  <text x="1060" y="435" text-anchor="middle" fill="#f2d5a5" font-family="Segoe UI, Arial, sans-serif" font-size="24">uOps, time, mWh</text>
+  <rect x="1270" y="310" width="210" height="170" rx="26" fill="#2a1f31" stroke="#d58cff"/>
+  <text x="1375" y="390" text-anchor="middle" fill="#fae6ff" font-family="Segoe UI, Arial, sans-serif" font-size="38" font-weight="700">Action</text>
+  <text x="1375" y="435" text-anchor="middle" fill="#e0c6ea" font-family="Segoe UI, Arial, sans-serif" font-size="24">fix, verify, scale</text>
+  <path d="M445 395h65" stroke="#68c7ff" stroke-width="10" stroke-linecap="round"/>
+  <path d="M855 395h60" stroke="#2fd1a8" stroke-width="10" stroke-linecap="round"/>
+  <path d="M1185 395h60" stroke="#ffb84d" stroke-width="10" stroke-linecap="round"/>
+</svg>

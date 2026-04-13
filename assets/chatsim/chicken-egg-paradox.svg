@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Chicken and egg paradox</title>
+  <desc id="desc">Observability and static code analysis depend on each other to explain energy relevance.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1215"/>
+      <stop offset="100%" stop-color="#183740"/>
+    </linearGradient>
+    <linearGradient id="egg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fffce8"/>
+      <stop offset="100%" stop-color="#f1d887"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <g opacity=".18">
+    <circle cx="600" cy="400" r="240" fill="#7ef5cf"/>
+  </g>
+  <path d="M370 420C370 300 446 222 548 222C650 222 726 300 726 420C726 548 648 626 548 626C446 626 370 548 370 420Z" fill="url(#egg)" stroke="#ffe9a7" stroke-width="8"/>
+  <path d="M568 220C662 232 744 302 770 394C792 472 764 562 694 618" fill="none" stroke="#7ef5cf" stroke-width="16" stroke-linecap="round" stroke-dasharray="20 18"/>
+  <path d="M700 608l-48 4 24-42" fill="none" stroke="#7ef5cf" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="760" y="238" width="250" height="156" rx="20" fill="#102128" stroke="#7ef5cf" stroke-opacity=".45" stroke-width="4"/>
+  <text x="885" y="288" text-anchor="middle" font-family="Consolas, 'Courier New', monospace" font-size="26" fill="#d8fff7">trace.log</text>
+  <text x="885" y="328" text-anchor="middle" font-family="Consolas, 'Courier New', monospace" font-size="24" fill="#7ef5cf">wakes, waits, hotspots</text>
+  <rect x="768" y="430" width="250" height="156" rx="20" fill="#102128" stroke="#7ef5cf" stroke-opacity=".45" stroke-width="4"/>
+  <text x="893" y="478" text-anchor="middle" font-family="Consolas, 'Courier New', monospace" font-size="26" fill="#d8fff7">code.java</text>
+  <text x="893" y="520" text-anchor="middle" font-family="Consolas, 'Courier New', monospace" font-size="24" fill="#7ef5cf">structure, branches, loops</text>
+  <path d="M706 392H760" stroke="#7ef5cf" stroke-width="10" stroke-linecap="round"/>
+  <path d="M706 508H768" stroke="#7ef5cf" stroke-width="10" stroke-linecap="round"/>
+  <text x="548" y="408" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="700" fill="#102128">Which comes first?</text>
+  <text x="548" y="452" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="26" fill="#102128">runtime proof or code explanation</text>
+  <text x="600" y="104" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="700" fill="#e4fffa" letter-spacing="2">CHICKEN-AND-EGG PARADOX</text>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#0f1519"/>
+  <text x="800" y="140" text-anchor="middle" fill="#f2fff8" font-family="Segoe UI, Arial, sans-serif" font-size="58" font-weight="700">mWh -> Wh -> kWh -> CO2e -> kg -> metric tons</text>
+  <g fill="#172129" stroke="#2fd1a8" stroke-width="3">
+    <rect x="120" y="340" width="180" height="120" rx="22"/>
+    <rect x="350" y="340" width="180" height="120" rx="22"/>
+    <rect x="580" y="340" width="180" height="120" rx="22"/>
+    <rect x="810" y="340" width="180" height="120" rx="22"/>
+    <rect x="1040" y="340" width="180" height="120" rx="22"/>
+    <rect x="1270" y="340" width="210" height="120" rx="22"/>
+  </g>
+  <g fill="#eafff7" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="700" text-anchor="middle">
+    <text x="210" y="415">mWh</text>
+    <text x="440" y="415">Wh</text>
+    <text x="670" y="415">kWh</text>
+    <text x="900" y="415">CO2e</text>
+    <text x="1130" y="415">kg</text>
+    <text x="1375" y="415">metric tons</text>
+  </g>
+</svg>

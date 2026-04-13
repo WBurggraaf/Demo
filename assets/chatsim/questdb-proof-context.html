@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuestDB Article Proof</title>
+  <style>
+    body { margin: 0; font: 16px/1.5 "Segoe UI", Arial, sans-serif; background: #0f1519; color: #eef6f2; padding: 20px; }
+    .card { border: 1px solid #294046; border-radius: 18px; padding: 18px; background: #162127; }
+    a { color: #7ed8ff; }
+    .metric { display: inline-block; margin: 8px 10px 0 0; padding: 8px 12px; border-radius: 999px; background: #20343d; border: 1px solid #2fd1a8; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>QuestDB article and published proof</h1>
+    <p><a href="https://questdb.com/blog/jvm-current-thread-user-time/" target="_blank" rel="noopener">Open the article</a></p>
+    <div class="metric">Before: 11.186 us/op</div>
+    <div class="metric">After: 0.279 us/op</div>
+    <div class="metric">about 97.5% lower latency</div>
+    <p>The article explains the before path as procfs open/read/parse/close and the after path as a direct clock query using a Linux clock id trick.</p>
+  </div>
+</body>
+</html>

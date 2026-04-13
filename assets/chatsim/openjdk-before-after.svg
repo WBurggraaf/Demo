@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#10161c"/>
+  <text x="800" y="120" text-anchor="middle" fill="#f2fff8" font-family="Segoe UI, Arial, sans-serif" font-size="58" font-weight="700">OpenJDK before vs after</text>
+  <rect x="150" y="250" width="520" height="420" rx="28" fill="#2e231d" stroke="#ff9a66"/>
+  <text x="410" y="330" text-anchor="middle" fill="#fff1e8" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="700">Before</text>
+  <text x="410" y="405" text-anchor="middle" fill="#ffd7c0" font-family="Segoe UI, Arial, sans-serif" font-size="54">11.186 us/op</text>
+  <rect x="240" y="470" width="340" height="70" rx="18" fill="#ff9a66"/>
+  <text x="410" y="515" text-anchor="middle" fill="#241813" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">procfs open / read / parse / close</text>
+  <rect x="930" y="250" width="520" height="420" rx="28" fill="#1c2b24" stroke="#2fd1a8"/>
+  <text x="1190" y="330" text-anchor="middle" fill="#ecfff7" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="700">After</text>
+  <text x="1190" y="405" text-anchor="middle" fill="#d4f4e7" font-family="Segoe UI, Arial, sans-serif" font-size="54">0.279 us/op</text>
+  <rect x="1010" y="470" width="360" height="70" rx="18" fill="#2fd1a8"/>
+  <text x="1190" y="515" text-anchor="middle" fill="#12201b" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">clock_gettime path</text>
+  <text x="800" y="790" text-anchor="middle" fill="#f7ffe7" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="700">about 97.5% lower latency</text>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#0f1519"/>
+  <text x="800" y="150" text-anchor="middle" fill="#f2fff8" font-family="Segoe UI, Arial, sans-serif" font-size="62" font-weight="700">uOps -> seconds -> mWh -> kWh -> CO2e</text>
+  <g font-family="Segoe UI, Arial, sans-serif" font-weight="700" font-size="34">
+    <rect x="110" y="360" width="220" height="120" rx="22" fill="#1d2833" stroke="#68c7ff"/>
+    <text x="220" y="432" text-anchor="middle" fill="#e8f6ff">uOps</text>
+    <rect x="410" y="360" width="220" height="120" rx="22" fill="#1d2b25" stroke="#2fd1a8"/>
+    <text x="520" y="432" text-anchor="middle" fill="#ecfff7">seconds</text>
+    <rect x="710" y="360" width="220" height="120" rx="22" fill="#30281d" stroke="#ffb84d"/>
+    <text x="820" y="432" text-anchor="middle" fill="#fff4de">mWh</text>
+    <rect x="1010" y="360" width="220" height="120" rx="22" fill="#2d2133" stroke="#d58cff"/>
+    <text x="1120" y="432" text-anchor="middle" fill="#f7e9ff">kWh</text>
+    <rect x="1310" y="360" width="180" height="120" rx="22" fill="#2a3022" stroke="#9bd85b"/>
+    <text x="1400" y="432" text-anchor="middle" fill="#f2ffe2">CO2e</text>
+  </g>
+  <path d="M335 420h50" stroke="#68c7ff" stroke-width="10" stroke-linecap="round"/>
+  <path d="M635 420h50" stroke="#2fd1a8" stroke-width="10" stroke-linecap="round"/>
+  <path d="M935 420h50" stroke="#ffb84d" stroke-width="10" stroke-linecap="round"/>
+  <path d="M1235 420h50" stroke="#d58cff" stroke-width="10" stroke-linecap="round"/>
+</svg>

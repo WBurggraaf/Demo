@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
+  <title id="title">Sparky the AI co-host</title>
+  <desc id="desc">A friendly robot illustration used to introduce the AI co-host.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f2b26"/>
+      <stop offset="100%" stop-color="#123f36"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d9fff3"/>
+      <stop offset="100%" stop-color="#98e6cf"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" rx="36" fill="url(#bg)"/>
+  <circle cx="120" cy="120" r="76" fill="#0b1815" opacity="0.55"/>
+  <path d="M120 34v26" stroke="#98e6cf" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="120" cy="28" r="10" fill="#10a37f"/>
+  <rect x="56" y="64" width="128" height="92" rx="28" fill="url(#metal)" stroke="#10a37f" stroke-width="6"/>
+  <rect x="78" y="84" width="84" height="42" rx="18" fill="#163832"/>
+  <circle cx="104" cy="105" r="10" fill="#7ef5cf"/>
+  <circle cx="136" cy="105" r="10" fill="#7ef5cf"/>
+  <path d="M94 136c8 8 18 12 26 12s18-4 26-12" fill="none" stroke="#10a37f" stroke-width="7" stroke-linecap="round"/>
+  <path d="M82 157v22" stroke="#98e6cf" stroke-width="10" stroke-linecap="round"/>
+  <path d="M158 157v22" stroke="#98e6cf" stroke-width="10" stroke-linecap="round"/>
+  <path d="M56 109H34" stroke="#98e6cf" stroke-width="10" stroke-linecap="round"/>
+  <path d="M206 109h-22" stroke="#98e6cf" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="34" cy="109" r="9" fill="#10a37f"/>
+  <circle cx="206" cy="109" r="9" fill="#10a37f"/>
+  <path d="M94 185l-8 24" stroke="#98e6cf" stroke-width="10" stroke-linecap="round"/>
+  <path d="M146 185l8 24" stroke="#98e6cf" stroke-width="10" stroke-linecap="round"/>
+  <path d="M72 198h32" stroke="#10a37f" stroke-width="8" stroke-linecap="round"/>
+  <path d="M136 198h32" stroke="#10a37f" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="182" cy="56" r="7" fill="#7ef5cf" opacity="0.9"/>
+  <circle cx="196" cy="40" r="4" fill="#7ef5cf" opacity="0.7"/>
+  <circle cx="46" cy="48" r="5" fill="#7ef5cf" opacity="0.7"/>
+</svg>

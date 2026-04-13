@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenJDK Issue Context</title>
+  <style>
+    body { margin: 0; font: 16px/1.5 "Segoe UI", Arial, sans-serif; background: #0f1519; color: #eef6f2; padding: 20px; }
+    .card { border: 1px solid #294046; border-radius: 18px; padding: 18px; background: #162127; }
+    a { color: #7ed8ff; }
+    h1, h2 { margin-top: 0; }
+    code { background: #111a20; padding: 2px 6px; border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>OpenJDK issue chatter</h1>
+    <p>This local context page summarizes the upstream trail used in the talk.</p>
+    <h2>Key pointers</h2>
+    <p><a href="https://bugs.openjdk.org/browse/JDK-8202788" target="_blank" rel="noopener">Original bug report</a></p>
+    <p><a href="https://questdb.com/blog/jvm-current-thread-user-time/" target="_blank" rel="noopener">QuestDB deep-dive</a></p>
+    <p>The story is simple: <code>getCurrentThreadUserTime()</code> used a procfs open/read/parse path that was dramatically slower than a direct CPU clock query.</p>
+  </div>
+</body>
+</html>

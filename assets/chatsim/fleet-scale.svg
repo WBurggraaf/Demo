@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#10161b"/>
+  <text x="800" y="150" text-anchor="middle" fill="#f2fff8" font-family="Segoe UI, Arial, sans-serif" font-size="58" font-weight="700">Per call -> workload -> fleet -> year</text>
+  <rect x="130" y="320" width="260" height="190" rx="28" fill="#1a2630" stroke="#68c7ff"/>
+  <rect x="490" y="320" width="260" height="190" rx="28" fill="#1f2b24" stroke="#2fd1a8"/>
+  <rect x="850" y="320" width="260" height="190" rx="28" fill="#30281d" stroke="#ffb84d"/>
+  <rect x="1210" y="320" width="260" height="190" rx="28" fill="#2d2133" stroke="#d58cff"/>
+  <g font-family="Segoe UI, Arial, sans-serif" text-anchor="middle">
+    <text x="260" y="405" fill="#e8f6ff" font-size="36" font-weight="700">per call</text>
+    <text x="620" y="405" fill="#ecfff7" font-size="36" font-weight="700">workload</text>
+    <text x="980" y="405" fill="#fff4de" font-size="36" font-weight="700">fleet</text>
+    <text x="1340" y="405" fill="#f7e9ff" font-size="36" font-weight="700">year</text>
+  </g>
+  <path d="M395 415h70" stroke="#68c7ff" stroke-width="10" stroke-linecap="round"/>
+  <path d="M755 415h70" stroke="#2fd1a8" stroke-width="10" stroke-linecap="round"/>
+  <path d="M1115 415h70" stroke="#ffb84d" stroke-width="10" stroke-linecap="round"/>
+</svg>

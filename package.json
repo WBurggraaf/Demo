@@ -1,0 +1,9 @@
+{
+  "name": "chatsim",
+  "version": "1.0.0",
+  "description": "Static GenAI chat simulator for presentations",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  }
+}

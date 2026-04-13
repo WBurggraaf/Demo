@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#10161b"/>
+  <text x="800" y="150" text-anchor="middle" fill="#f2fff8" font-family="Segoe UI, Arial, sans-serif" font-size="62" font-weight="700">Underutilization / Waiting / Bottleneck</text>
+  <rect x="110" y="280" width="410" height="360" rx="28" fill="#1b2732" stroke="#68c7ff"/>
+  <text x="315" y="370" text-anchor="middle" fill="#e8f6ff" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="700">Underutilization</text>
+  <text x="315" y="445" text-anchor="middle" fill="#c7dbe8" font-family="Segoe UI, Arial, sans-serif" font-size="26">idle capacity</text>
+  <text x="315" y="490" text-anchor="middle" fill="#c7dbe8" font-family="Segoe UI, Arial, sans-serif" font-size="26">background machinery</text>
+  <rect x="595" y="280" width="410" height="360" rx="28" fill="#1f2a24" stroke="#2fd1a8"/>
+  <text x="800" y="370" text-anchor="middle" fill="#ecfff7" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="700">Waiting patterns</text>
+  <text x="800" y="445" text-anchor="middle" fill="#d0e8dc" font-family="Segoe UI, Arial, sans-serif" font-size="26">wakeups</text>
+  <text x="800" y="490" text-anchor="middle" fill="#d0e8dc" font-family="Segoe UI, Arial, sans-serif" font-size="26">sleep loops</text>
+  <rect x="1080" y="280" width="410" height="360" rx="28" fill="#31281e" stroke="#ffb84d"/>
+  <text x="1285" y="370" text-anchor="middle" fill="#fff4de" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="700">Bottleneck</text>
+  <text x="1285" y="445" text-anchor="middle" fill="#f1dcc0" font-family="Segoe UI, Arial, sans-serif" font-size="26">hot path work</text>
+  <text x="1285" y="490" text-anchor="middle" fill="#f1dcc0" font-family="Segoe UI, Arial, sans-serif" font-size="26">latency pressure</text>
+</svg>

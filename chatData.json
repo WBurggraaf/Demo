@@ -1,0 +1,673 @@
+{
+    "demoTitle": "Spotting Digital Waste in Code Gives You Energy",
+    "model": "Sparky",
+    "thinkingDelay": 900,
+    "messageDelay": 250,
+    "streamDelayMultiplier": 3.525,
+    "steps": [
+        {
+            "role": "user",
+            "stepNumber": 1,
+            "content": "Introduce yourself. Who is Sparky?"
+        },
+        {
+            "role": "assistant",
+            "stepNumber": 2,
+            "slide": "Meet Sparky",
+            "presentationStyle": "popup",
+            "deferMediaUntilSpeechDone": true,
+            "openImageFullscreenOnAdvance": true,
+            "content": "Hi everyone! I am Sparky, your AI assistant. I inspect code, connect it to runtime evidence, estimate waste, and infer likely energy significance.",
+            "media": [
+                {
+                    "type": "image",
+                    "src": "assets/chatsim/sparky-intro-scan.svg",
+                    "className": "robot-float",
+                    "caption": "Sparky introduces itself"
+                }
+            ]
+        },
+        {
+            "role": "user",
+            "stepNumber": 3,
+            "content": "Sparky, are you nervous for today's talk?"
+        },
+        {
+            "role": "assistant",
+            "stepNumber": 4,
+            "slide": "Meet Sparky",
+            "content": "Only in the way a toaster is nervous near a bathtub. I am calibrated, caffeinated by electricity, and ready to behave just suspiciously well.",
+            "media": [
+                {
+                    "type": "image",
+                    "src": "assets/meme.png",
+                    "caption": "Sparky meme"
+                }
+            ]
+        },
+        {
+            "role": "user",
+            "stepNumber": 5,
+            "content": "Before we dive into code, I want to interview you about your background."
+        },
+        {
+            "role": "assistant",
+            "stepNumber": 6,
+            "slide": "Speaker Interview",
+            "presentationStyle": "popup",
+            "content": "I will ask Wilco three quick questions so everyone knows who is speaking and why this topic matters today."
+        },
+        {
+            "role": "assistant",
+            "stepNumber": 7,
+            "slide": "Speaker Intro",
+            "content": "First question for Wilco: who are you, and what do you spend your time working on?"
+        },
+        {
+            "role": "user",
+            "stepNumber": 8,
+            "content": "Next question"
+        },
+        {
+            "role": "assistant",
+            "stepNumber": 9,
+            "slide": "Speaker Intro",
+            "content": "Second question: what do you actually do, and why do software, architecture, and sustainability belong in the same conversation for you?"
+        },
+        {
+            "role": "user",
+            "stepNumber": 10,
+            "content": "One more question"
+        },
+        {
+            "role": "assistant",
+            "stepNumber": 11,
+            "slide": "My Upbringing",
+            "presentationStyle": "popup",
+            "content": "Final question: where does that perspective come from?",
+            "openImageFullscreenAfterSpeech": true,
+            "media": [
+                {
+                    "type": "image",
+                    "src": "assets/image9.jpeg",
+                    "caption": "A glimpse of the environment that shaped how I think about energy, industry, and waste"
+                }
+            ]
+        },
+        {
+            "role": "user",
+            "stepNumber": 12,
+            "content": "What is this session about?"
+        },
+        {
+            "role": "popup",
+            "stepNumber": 13,
+            "content": "Spotting digital waste in code gives you energy because once you see waste clearly, you can do something about it."
+        },
+        {
+            "role": "user",
+            "stepNumber": 14,
+            "content": "What will I learn here?"
+        },
+        {
+            "role": "assistant",
+            "stepNumber": 15,
+            "slide": "Agenda",
+            "content": "You move through four stages: awareness, dialogue, decision frames, and action. The goal is to make waste visible and discussable."
+        },
+        {
+            "role": "user",
+            "stepNumber": 16,
+            "content": "Where does this start?"
+        },
+        {
+            "role": "assistant",
+            "stepNumber": 17,
+            "slide": "Opening Visual",
+            "content": "It starts with a visual cue. Before code, you are invited to notice the act of looking closely.",
+            "deferMediaUntilSpeechDone": true,
+            "media": [
+                {
+                    "type": "video",
+                    "src": "assets/media1.mp4",
+                    "fullscreenOnPlay": true,
+                    "caption": "Opening video"
+                }
+            ]
+        },
+        {
+            "role": "user",
+            "stepNumber": 18,
+            "content": "Who is Freek?"
+        },
+        {
+            "role": "assistant",
+            "stepNumber": 19,
+            "slide": "Spotting in Nature",
+            "content": "**This is Freek.** Freek loves wildlife spotting. When Freek spots a rare bird, he does not just go outside. He records it at waarneming.nl/. That helps researchers and policymakers understand what is living out there. What you notice today can make a difference for nature conservation tomorrow. **Be like Freek.**",
+            "media": [
+                {
+                    "type": "image",
+                    "src": "assets/image24.png",
+                    "caption": "Wildlife spotting"
+                }
+            ]
+        },
+        {
+            "role": "user",
+            "stepNumber": 20,
+            "content": "What does spotting teach you?"
+        },
+        {
+            "role": "assistant",
+            "stepNumber": 21,
+            "slide": "Spotting Training",
+            "content": "Spotting trains your eyes. You go out early, keep looking, and slowly learn to recognize what deserves attention.",
+            "media": [
+                {
+                    "type": "image",
+                    "src": "assets/image26.jpeg",
+                    "caption": "Spotting Training"
+                }
+            ]
+        },
+        {
+            "role": "user",
+            "stepNumber": 22,
+            "content": "What do you notice first?"
+        },
+        {
+            "role": "popup",
+            "stepNumber": 23,
+            "content": "A plastic bottle. A paper bag. Waste that was there all along, but now stands out immediately."
+        },
+        {
+            "role": "user",
+            "stepNumber": 24,
+            "content": "Why didn't I see it before?"
+        },
+        {
+            "role": "popup",
+            "stepNumber": 25,
+            "content": "Habit makes waste disappear into the background.",
+            "media": [
+                {
+                    "type": "image",
+                    "src": "assets/image28.jpeg",
+                    "caption": ""
+                }
+            ]
+        },
+        {
+            "role": "user",
+            "stepNumber": 26,
+            "content": "What else makes it easy to miss?"
+        },
+        {
+            "role": "popup",
+            "stepNumber": 27,
+            "content": "Another reason is ownership. If it feels like someone else's problem, it becomes easy to ignore.",
+            "media": [
+                {
+                    "type": "image",
+                    "src": "assets/image29.png",
+                    "caption": ""
+                }
+            ]
+        },
+        {
+            "role": "user",
+            "stepNumber": 28,
+            "content": "When can you not ignore it anymore?"
+        },
+        {
+            "role": "popup",
+            "stepNumber": 29,
+            "content": "It reaches the point where ignoring it is no longer possible.",
+            "media": [
+                {
+                    "type": "image",
+                    "src": "assets/image30.png",
+                    "caption": ""
+                }
+            ]
+        },
+        {
+            "role": "user",
+            "stepNumber": 30,
+            "content": "When does it become a value question?"
+        },
+        {
+            "role": "popup",
+            "stepNumber": 31,
+            "content": "The shift happens when value becomes visible. Waste looks very different once you ask what something is worth.",
+            "media": [
+                {
+                    "type": "image",
+                    "src": "assets/image31.png",
+                    "caption": ""
+                }
+            ]
+        },
+        {
+            "role": "user",
+            "stepNumber": 32,
+            "content": "What changes once you frame it as value?"
+        },
+        {
+            "role": "assistant",
+            "stepNumber": 33,
+            "slide": "Value Framework",
+            "content": "The tree is framed as real value, roughly 150,000 to 250,000 euros. That reframes careless loss as measurable damage.",
+            "media": [
+                {
+                    "type": "image",
+                    "src": "assets/image32.png",
+                    "caption": "Value Framework"
+                }
+            ]
+        },
+        {
+            "role": "user",
+            "stepNumber": 34,
+            "content": "How does that relate to software?"
+        },
+        {
+            "role": "assistant",
+            "stepNumber": 35,
+            "slide": "Electricity Maps",
+            "content": "You bring in Electricity Maps to make infrastructure consumption feel physical. Compute is not abstract; it runs somewhere real, with location, intensity, and trade-offs.",
+            "openImageFullscreenAfterSpeech": true,
+            "media": [
+                {
+                    "type": "image",
+                    "src": "assets/image33.png",
+                    "caption": "Electricity Maps view with the live generation mix"
+                }
+            ]
+        },
+        {
+            "role": "user",
+            "stepNumber": 36,
+            "content": "So what's the core idea?"
+        },
+        {
+            "role": "assistant",
+            "stepNumber": 37,
+            "slide": "Digital Waste Definition",
+            "content": "Digital waste is cost without value. That cost can be money, energy, capacity, or attention. It is invisible until you train yourself to spot it.",
+            "media": [
+                {
+                    "type": "image",
+                    "src": "assets/image39.png",
+                    "caption": "Digital Waste Definition"
+                }
+            ]
+        },
+        {
+            "role": "user",
+            "stepNumber": 38,
+            "content": "Can you show that in cloud infrastructure?"
+        },
+        {
+            "role": "assistant",
+            "stepNumber": 39,
+            "slide": "Cloud Waste Example",
+            "content": "This becomes concrete with AWS. Waste is not abstract here either. It shows up in the infrastructure choices teams make every day.",
+            "media": [
+                {
+                    "type": "image",
+                    "src": "assets/image40.png",
+                    "caption": "Cloud Waste Example"
+                }
+            ]
+        },
+        {
+            "role": "user",
+            "stepNumber": 40,
+            "content": "Where do you see that choice?"
+        },
+        {
+            "role": "assistant",
+            "stepNumber": 41,
+            "slide": "Instance Selection",
+            "content": "It starts with instance selection. The platform gives you many shapes, but that flexibility also makes overprovisioning easy.",
+            "media": [
+                {
+                    "type": "image",
+                    "src": "assets/image41.png",
+                    "caption": "Instance Selection"
+                }
+            ]
+        },
+        {
+            "role": "user",
+            "stepNumber": 42,
+            "content": "What happens at low utilization?"
+        },
+        {
+            "role": "assistant",
+            "stepNumber": 43,
+            "slide": "Low Utilization Costs",
+            "content": "At 25% utilization, a shared 16-vCPU AWS instance uses about 340 kWh per year, while a dedicated on-prem 16-core server uses about 1,600 kWh per year. The difference is sharing: AWS spreads baseline cost across many tenants.",
+            "media": [
+                {
+                    "type": "image",
+                    "src": "assets/image41.png",
+                    "caption": "Low Utilization Costs"
+                }
+            ]
+        },
+        {
+            "role": "user",
+            "stepNumber": 44,
+            "content": "What about higher utilization?"
+        },
+        {
+            "role": "assistant",
+            "stepNumber": 45,
+            "slide": "Higher Utilization",
+            "content": "At 75% utilization, a shared 16-vCPU AWS instance uses about 640 kWh per year, while a dedicated on-prem 16-core server is around 2,700 kWh per year.",
+            "media": [
+                {
+                    "type": "image",
+                    "src": "assets/image42.png",
+                    "caption": "Higher Utilization"
+                }
+            ]
+        },
+        {
+            "role": "user",
+            "stepNumber": 46,
+            "content": "How do you quantify the waste?"
+        },
+        {
+            "role": "assistant",
+            "stepNumber": 47,
+            "slide": "Consolidation Impact",
+            "content": "Consolidating three 25% VMs into one 75% VM can save roughly two full instance costs, or about 13,000 euros per year with m5.4xlarge on-demand pricing.",
+            "media": [
+                {
+                    "type": "image",
+                    "src": "assets/image42.png",
+                    "caption": "Consolidation Impact"
+                }
+            ]
+        },
+        {
+            "role": "user",
+            "stepNumber": 48,
+            "content": "What should I look for in a real system?"
+        },
+        {
+            "role": "assistant",
+            "stepNumber": 49,
+            "slide": "Three Signals",
+            "content": "Look for three signals: too much capacity with too little use, slowness without full CPU, or one saturated part while the rest waits."
+        },
+        {
+            "role": "user",
+            "stepNumber": 50,
+            "content": "What forms does digital waste usually take?"
+        },
+        {
+            "role": "assistant",
+            "stepNumber": 51,
+            "slide": "Waste Types",
+            "content": "You meet it as idle resources, structural overcapacity, repeated default settings, or hidden compute that adds no visible value."
+        },
+        {
+            "role": "user",
+            "stepNumber": 52,
+            "content": "Can a tiny code change really matter?"
+        },
+        {
+            "role": "popup",
+            "stepNumber": 53,
+            "content": "Only 40 lines of code can hide a massive gap in latency, work done, and energy consumed."
+        },
+        {
+            "role": "user",
+            "stepNumber": 54,
+            "content": "What example do you use?"
+        },
+        {
+            "role": "assistant",
+            "stepNumber": 55,
+            "slide": "OpenJDK Case Study",
+            "presentationStyle": "popup",
+            "content": "It starts with a concrete OpenJDK issue. The problem: every call to getCurrentThreadUserTime() opens procfs, reads a file, and parses text. That is three expensive operations, repeated millions of times.",
+            "openImageFullscreenAfterSpeech": true,
+            "media": [
+                {
+                    "type": "image",
+                    "src": "assets/image50.png",
+                    "caption": "OpenJDK issue context"
+                }
+            ]
+        },
+        {
+            "role": "user",
+            "stepNumber": 56,
+            "content": "What's the core technical idea?"
+        },
+        {
+            "role": "assistant",
+            "stepNumber": 57,
+            "slide": "Procfs vs Direct Clock",
+            "content": "The core idea is simple: reading procfs means opening text and parsing it, while direct clock access is simpler and faster.",
+            "media": [
+                {
+                    "type": "image",
+                    "src": "assets/image47.png",
+                    "caption": "Procfs vs Direct Clock"
+                }
+            ]
+        },
+        {
+            "role": "user",
+            "stepNumber": 58,
+            "content": "What does the old implementation look like?"
+        },
+        {
+            "role": "assistant",
+            "stepNumber": 59,
+            "slide": "Old Implementation",
+            "presentationStyle": "popup",
+            "content": "Here is the old procfs-based path. The important thing is not the line count, but the amount of work hidden behind it.",
+            "code": [
+                {
+                    "language": "cpp",
+                    "caption": "Opening the procfs stat file and reading its contents",
+                    "content": "static jlong user_thread_cpu_time(Thread* thread) {\n  pid_t tid = thread->osthread()->thread_id();\n  char stat[2048];\n  FILE* fp;\n\n  os::snprintf_checked(proc_name, 64, \"/proc/self/task/%d/stat\", tid);\n  fp = os::fopen(proc_name, \"r\");  // 🔴 Hotspot 1: file open\n  if (fp == nullptr) return -1;\n\n  statlen = fread(stat, 1, 2047, fp);  // 🔴 Hotspot 2: procfs read\n  stat[statlen] = '\\0';\n  fclose(fp);\n\n  s = strrchr(stat, ')');\n  if (s == nullptr) return -1;"
+                },
+                {
+                    "language": "cpp",
+                    "caption": "Parsing fields and returning user time",
+                    "content": "  count = sscanf(s, \"%c %d %d %d %d %d %lu %lu %lu %lu %lu %lu %lu\",\n    &cdummy, &idummy, &idummy, &idummy, &idummy, &idummy,\n    &ldummy, &ldummy, &ldummy, &ldummy, &ldummy,\n    &user_time, &sys_time);  // 🔴 Hotspot 3: string parse\n\n  if (count != 13) return -1;\n  return (jlong)user_time * (1000000000 / os::Posix::clock_tics_per_second());\n}"
+                }
+            ],
+            "media": [
+                {
+                    "type": "image",
+                    "src": "assets/image48.png",
+                    "caption": "Old Implementation"
+                }
+            ]
+        },
+        {
+            "role": "user",
+            "stepNumber": 60,
+            "content": "What's the modeled energy cost?"
+        },
+        {
+            "role": "assistant",
+            "stepNumber": 61,
+            "slide": "Energy Model",
+            "content": "Using a simple model (1 Hz = 1 uOp, voltage and frequency scaling), the top 3 waste points: file open (81 mWh), procfs read (138 mWh), and string parse (165 mWh). Total over 100 million calls: about 384 mWh of modeled energy waste.",
+            "media": [
+                {
+                    "type": "image",
+                    "src": "assets/image54.png",
+                    "caption": "Energy Model"
+                }
+            ]
+        },
+        {
+            "role": "user",
+            "stepNumber": 62,
+            "content": "What changes in the better path?"
+        },
+        {
+            "role": "assistant",
+            "stepNumber": 63,
+            "slide": "Optimized Implementation",
+            "presentationStyle": "popup",
+            "content": "The better path asks the kernel directly for the right clock. Less parsing, less copying, fewer syscalls, and much better latency.",
+            "code": [
+                {
+                    "language": "cpp",
+                    "caption": "Direct clock-based path",
+                    "content": "static bool get_thread_clockid(Thread* thread, clockid_t* clockid, bool total) {\n  constexpr clockid_t CLOCK_TYPE_MASK = 3;\n  constexpr clockid_t CPUCLOCK_VIRT = 1;\n\n  int rc = pthread_getcpuclockid(thread->osthread()->pthread_id(), clockid);\n  if (rc != 0) return false;\n\n  if (!total) {\n    *clockid = (*clockid & ~CLOCK_TYPE_MASK) | CPUCLOCK_VIRT;\n  }\n  return true;\n}\n\nstatic jlong user_thread_cpu_time(Thread* thread) {\n  clockid_t clockid;\n  bool success = get_thread_clockid(thread, &clockid, false);\n  return success ? os::Linux::thread_cpu_time(clockid) : -1;\n}"
+                }
+            ],
+            "media": [
+                {
+                    "type": "image",
+                    "src": "assets/image56.png",
+                    "caption": "Optimized Implementation"
+                }
+            ]
+        },
+        {
+            "role": "user",
+            "stepNumber": 64,
+            "content": "What's the impact?"
+        },
+        {
+            "role": "assistant",
+            "stepNumber": 65,
+            "slide": "Before vs After",
+            "content": "Before: 11.186 uOps per call. After: 0.279 uOps per call. That is roughly 40x faster. At 100 watts: before 0.000311 mWh, after 0.00000775 mWh. Scale this to a fleet and you save kilograms of CO2 per year.",
+            "media": [
+                {
+                    "type": "image",
+                    "src": "assets/image58.png",
+                    "caption": "Before vs After"
+                }
+            ]
+        },
+        {
+            "role": "user",
+            "stepNumber": 66,
+            "content": "What should I do with this insight?"
+        },
+        {
+            "role": "assistant",
+            "stepNumber": 67,
+            "slide": "Spotting Pattern",
+            "content": "This case teaches you the pattern: find the hot path, understand what it costs, and simplify. The same three hotspots (I/O, data movement, parsing) show up in many systems.",
+            "media": [
+                {
+                    "type": "image",
+                    "src": "assets/image63.png",
+                    "caption": "Spotting Pattern"
+                }
+            ]
+        },
+        {
+            "role": "user",
+            "stepNumber": 68,
+            "content": "How do I turn insights into backlog items?"
+        },
+        {
+            "role": "assistant",
+            "stepNumber": 69,
+            "slide": "Backlog Framing",
+            "content": "Map each waste item to yearly cost, energy, CO2, and performance impact. Frame it as an outcome, not implementation. Example: reduce infrastructure cost by consolidating underused workloads.",
+            "media": [
+                {
+                    "type": "image",
+                    "src": "assets/image64.png",
+                    "caption": "Backlog Framing"
+                }
+            ]
+        },
+        {
+            "role": "user",
+            "stepNumber": 70,
+            "content": "What actions come first?"
+        },
+        {
+            "role": "assistant",
+            "stepNumber": 71,
+            "slide": "Quick Wins",
+            "content": "Start with safe quick wins. Not a platform revolution, but cleanup, consolidation, and right-sizing."
+        },
+        {
+            "role": "user",
+            "stepNumber": 72,
+            "content": "How do teams make room for that work?"
+        },
+        {
+            "role": "assistant",
+            "stepNumber": 73,
+            "slide": "Capacity",
+            "content": "Give it room to happen: reserve sprint capacity or a quarterly target. Otherwise urgent delivery will always win."
+        },
+        {
+            "role": "user",
+            "stepNumber": 74,
+            "content": "Who should own it?"
+        },
+        {
+            "role": "assistant",
+            "stepNumber": 75,
+            "slide": "Ownership",
+            "content": "No owner means no living backlog item. Add labels, ownership, and a reason to revisit the work."
+        },
+        {
+            "role": "user",
+            "stepNumber": 76,
+            "content": "What decision framework should I use?"
+        },
+        {
+            "role": "assistant",
+            "stepNumber": 77,
+            "slide": "Decision Frames",
+            "content": "Use three frames: value, cost, and exception. Ask who uses it, what it costs, and whether the trade-off is intentional."
+        },
+        {
+            "role": "user",
+            "stepNumber": 78,
+            "content": "What choices does that lead to?"
+        },
+        {
+            "role": "assistant",
+            "stepNumber": 79,
+            "slide": "Choices",
+            "content": "Then choose: remove it, combine it, calibrate it, or consciously accept it with a named owner."
+        },
+        {
+            "role": "user",
+            "stepNumber": 80,
+            "content": "How should I start after this talk?"
+        },
+        {
+            "role": "assistant",
+            "stepNumber": 81,
+            "slide": "Get Started",
+            "content": "Start with one application. Ask what you already do, what blocks progress, and which system has the biggest user, compute, or cost impact."
+        },
+        {
+            "role": "user",
+            "stepNumber": 82,
+            "content": "What should I walk away with?"
+        },
+        {
+            "role": "popup",
+            "stepNumber": 83,
+            "content": "You can now spot digital waste like Freek spots birds. You can discuss workload quality, inspect code differently, and turn that insight into practical action. Spotting digital waste in code gives you energy because you can do something about it."
+        }
+    ]
+}

@@ -1,0 +1,629 @@
+{
+    "demoTitle":  "Can AI Predict Energy-Relevant Java Waste?",
+    "model":  "Sparky",
+    "thinkingDelay":  900,
+    "messageDelay":  250,
+    "streamDelayMultiplier":  3.525,
+    "steps":  [
+                  {
+                      "role":  "user",
+                      "stepNumber":  1,
+                      "content":  "Introduce yourself. Who is Sparky?"
+                  },
+                  {
+                      "role":  "assistant",
+                      "stepNumber":  2,
+                      "slide":  "Meet Sparky",
+                      "presentationStyle":  "popup",
+                      "deferMediaUntilSpeechDone":  true,
+                      "openImageFullscreenOnAdvance":  true,
+                      "content":  "Hi everyone! I am Sparky, your AI assistant. I inspect code, connect it to runtime evidence, estimate waste, and infer likely energy significance.",
+                      "media":  [
+                                    {
+                                        "type":  "image",
+                                        "src":  "assets/chatsim/sparky-intro-scan.svg",
+                                        "caption":  "Sparky introduces itself"
+                                    }
+                                ]
+                  },
+                  {
+                      "role":  "user",
+                      "stepNumber":  3,
+                      "content":  "Sparky, are you nervous for today\u0027s talk?"
+                  },
+                  {
+                      "role":  "assistant",
+                      "stepNumber":  4,
+                      "slide":  "Meet Sparky",
+                      "content":  "Only in the way a toaster is nervous near a bathtub. I am calibrated, caffeinated by electricity, and ready to behave just suspiciously well.",
+                      "media":  [
+                                    {
+                                        "type":  "image",
+                                        "src":  "assets/meme.png",
+                                        "caption":  "Sparky meme"
+                                    }
+                                ]
+                  },
+                  {
+                      "role":  "assistant",
+                      "stepNumber":  5,
+                      "slide":  "Introductions",
+                      "presentationStyle":  "popup",
+                      "content":  "Wilco, before we begin, please introduce yourself."
+                  },
+                  {
+                      "role":  "assistant",
+                      "stepNumber":  6,
+                      "slide":  "Introductions",
+                      "content":  "",
+                      "media":  [
+                                    {
+                                        "type":  "image",
+                                        "src":  "assets/hightech.png",
+                                        "caption":  "High-tech visual"
+                                    }
+                                ]
+                  },
+                  {
+                      "role":  "user",
+                      "stepNumber":  7,
+                      "content":  "What is in the core of this presentation today?"
+                  },
+                  {
+                      "role":  "popup",
+                      "stepNumber":  8,
+                      "slide":  "Core Idea",
+                      "deferMediaUntilSpeechDone":  true,
+                      "openImageFullscreenOnAdvance":  true,
+                      "content":  "Software choices change hardware use, electricity, and CO2. So the real question is whether AI can spot waste early enough to help.",
+                      "media":  [
+                                    {
+                                        "caption":  "Electricity use depends on hardware time and grid mix",
+                                        "type":  "image",
+                                        "src":  "assets/electricitymaps.png"
+                                    }
+                                ]
+                  },
+                  {
+                      "role":  "user",
+                      "stepNumber":  9,
+                      "content":  "Frame the main question simply."
+                  },
+                  {
+                      "role":  "assistant",
+                      "stepNumber":  10,
+                      "slide":  "Research Question",
+                      "content":  "Can AI help us find code patterns that probably waste energy before we spend time measuring everything directly?"
+                  },
+                  {
+                      "role":  "user",
+                      "stepNumber":  11,
+                      "content":  "Before I answer that, I want to explain a paradox."
+                  },
+                  {
+                      "role":  "popup",
+                      "stepNumber":  12,
+                      "slide":  "Research Question",
+                      "deferMediaUntilSpeechDone":  true,
+                      "popupFullscreenMedia":  true,
+                      "content":  "I got you...",
+                      "media":  [
+                                    {
+                                        "caption":  "Chicken and egg paradox",
+                                        "type":  "video",
+                                        "fullscreenOnPlay":  true,
+                                        "src":  "assets/chicken.mp4"
+                                    }
+                                ]
+                  },
+                  {
+                      "role":  "assistant",
+                      "stepNumber":  13,
+                      "slide":  "Research Question",
+                      "deferMediaUntilSpeechDone":  true,
+                      "content":  "Wilco, why did we watch this?",
+                      "media":  [
+                                    {
+                                        "caption":  "From code evidence to engineering conclusion",
+                                        "type":  "image",
+                                        "src":  "assets/step2.png"
+                                    }
+                                ],
+                      "openImageFullscreenAfterSpeech":  true,
+                      "openImageFullscreenOnAdvance":  true
+                  },
+                  {
+                      "role":  "user",
+                      "stepNumber":  14,
+                      "content":  "If you can estimate energy, can you also estimate digital waste?"
+                  },
+                  {
+                      "role":  "assistant",
+                      "stepNumber":  15,
+                      "slide":  "Waste Classes",
+                      "presentationStyle":  "popup",
+                      "content":  "I can classify waste as **underutilization**, **waiting patterns**, or **bottlenecks**, then test whether the evidence supports a useful estimate."
+                  },
+                  {
+                      "role":  "user",
+                      "stepNumber":  16,
+                      "content":  "Map those categories to something concrete."
+                  },
+                  {
+                      "role":  "assistant",
+                      "stepNumber":  17,
+                      "slide":  "Waste Classes",
+                      "content":  "Here is the explainer.",
+                      "media":  [
+                                    {
+                                        "type":  "image",
+                                        "src":  "assets/explainer1.png",
+                                        "caption":  "Waste classes explainer"
+                                    }
+                                ],
+                      "openImageFullscreenAfterSpeech":  true,
+                      "openImageFullscreenOnAdvance":  true
+                  },
+                  {
+                      "role":  "user",
+                      "stepNumber":  18,
+                      "content":  "Here is the theoretical model in one line: \"1 Hz == 1 uOps, \u0026\u0026 1 core == 1 Ghz \u0026\u0026 1 core == 1.2 Volt. And respect Dynamic Voltage and Frequency Scaling\"."
+                  },
+                  {
+                      "role":  "assistant",
+                      "stepNumber":  19,
+                      "slide":  "Theoretical Model",
+                      "presentationStyle":  "popup",
+                      "content":  "From now, I will use your decision model",
+                      "media":  [
+                                    {
+                                        "caption":  "Theoretical model slide",
+                                        "type":  "image",
+                                        "src":  "assets/tmodel.png"
+                                    }
+                                ],
+                      "openImageFullscreenOnAdvance":  true
+                  },
+                  {
+                      "role":  "assistant",
+                      "stepNumber":  20,
+                      "slide":  "Theoretical Model",
+                      "presentationStyle":  "popup",
+                      "deferMediaUntilSpeechDone":  true,
+                      "openCodeFullscreenOnAdvance":  true,
+                      "content":  "Ta-da! - everything I was trained on is in here, so I can just add whatever you want inline in this example code. Just don't tell the kernel and runtime nerds... they'll say it's sooooo wronggg.",
+                      "code":  [
+                                   {
+                                       "language":  "java",
+                                       "caption":  "Java data-processing path with illustrative uOps-to-energy annotations",
+                                       "intro":  "Assume 10 million CSV rows in one batch. The inline comments estimate aggregate waste across all iterations, not per-line single-call cost. These are modeled talk aids, not direct hardware measurements.",
+                                       "why":  "The expensive part is aggregate helper work across all rows: splitting, trimming, parsing, string normalization, hashing, and map updates. Small per-row costs become large cumulative machine effort.",
+                                       "energySaving":  "Illustrative total for this batch: about 0.44 Wh, which becomes 0.00044 kWh. Repeat this 1,000 times and it becomes about 0.44 kWh.",
+                                       "content":  "Map\u003cString, Long\u003e totals = new HashMap\u003c\u003e();\n// Setup cost is small relative to the loop. Most modeled energy sits in repeated row handling.\n\nfor (String line : lines) {\n    String[] cols = line.split(\",\");\n    // Over 10M rows: about 240,000,000,000 uOps total | about 92 mWh total\n    // Aggregate effect: regex-aware split, array allocation, substring/copy work, and extra GC pressure.\n\n    String region = cols[0].trim().toLowerCase(Locale.ROOT);\n    // Over 10M rows: about 150,000,000,000 uOps total | about 58 mWh total\n    // Aggregate effect: boundary scans, per-character normalization, new String materialization, cache traffic.\n\n    int units = Integer.parseInt(cols[2]);\n    long priceMicros = Long.parseLong(cols[3]);\n    // Over 10M rows: about 190,000,000,000 uOps total | about 73 mWh total\n    // Aggregate effect: digit parsing, branching, bounds checks, and repeated character-to-number conversion.\n\n    long rowValue = (long) units * priceMicros;\n    // Over 10M rows: about 8,000,000,000 uOps total | about 3 mWh total\n    // Arithmetic is cheap, but still accumulates at dataset scale.\n\n    totals.merge(region, rowValue, Long::sum);\n    // Over 10M rows: about 560,000,000,000 uOps total | about 214 mWh total\n    // Aggregate effect: hashing, key comparison, map probes, lambda/helper dispatch, and update traffic.\n}\n\n// Batch rollup for 10M rows:\n// Total modeled work: about 1,160,000,000,000 uOps\n// Total modeled energy: about 440 mWh = 0.44 Wh = 0.00044 kWh\n// Fleet example: 1,000 similar batches -\u003e about 440,000,000,000,000 uOps and about 0.44 kWh"
+                                   }
+                               ]
+                  },
+                  {
+                      "role":  "user",
+                      "stepNumber":  21,
+                      "content":  "Can you show how CPU activity becomes an energy estimate?"
+                  },
+                  {
+                      "role":  "assistant",
+                      "stepNumber":  22,
+                      "slide":  "CPU Activity",
+                      "content":  "Here, two cores work hard while four sit idle.",
+                      "media":  [
+                                    {
+                                        "caption":  "Some cores active, others idle",
+                                        "type":  "image",
+                                        "src":  "assets/cpu1.png"
+                                    }
+                                ],
+                      "openImageFullscreenOnAdvance":  true
+                  },
+                  {
+                      "role":  "assistant",
+                      "stepNumber":  23,
+                      "slide":  "CPU Activity",
+                      "content":  "When every core runs flat out, the chip works harder, gets hotter.",
+                      "media":  [
+                                    {
+                                        "caption":  "All cores active at high frequency",
+                                        "type":  "image",
+                                        "src":  "assets/cpu2.png"
+                                    }
+                                ],
+                      "openImageFullscreenOnAdvance":  true
+                  },
+                  {
+                      "role":  "assistant",
+                      "stepNumber":  24,
+                      "slide":  "DVFS",
+                      "content":  "CPU Cores also change speed dynamically. Lower frequency often means less work.",
+                      "media":  [
+                                    {
+                                        "caption":  "Dynamic frequency scaling",
+                                        "type":  "image",
+                                        "src":  "assets/cpu3.png"
+                                    }
+                                ],
+                      "openImageFullscreenOnAdvance":  true
+                  },
+                  {
+                      "role":  "assistant",
+                      "stepNumber":  25,
+                      "slide":  "Power Model",
+                      "content":  "Voltage changes too. With frequency.",
+                      "media":  [
+                                    {
+                                        "caption":  "Voltage and package power",
+                                        "type":  "image",
+                                        "src":  "assets/cpu4.png"
+                                    }
+                                ],
+                      "openImageFullscreenOnAdvance":  true
+                  },
+                  {
+                      "role":  "assistant",
+                      "stepNumber":  26,
+                      "slide":  "Energy Model",
+                      "content":  "Power over time becomes energy.",
+                      "media":  [
+                                    {
+                                        "caption":  "Estimated mWh over time",
+                                        "type":  "image",
+                                        "src":  "assets/cpu5.png"
+                                    }
+                                ],
+                      "openImageFullscreenOnAdvance":  true
+                  },
+                  {
+                      "role":  "popup",
+                      "stepNumber":  27,
+                      "slide":  "OpenJDK ThreadMXBean",
+                      "content":  "Finally, real code. Yay!"
+                  },
+                  {
+                      "role":  "user",
+                      "stepNumber":  28,
+                      "content":  "Can you show the prepared OpenJDK example."
+                  },
+                  {
+                      "role":  "assistant",
+                      "stepNumber":  29,
+                      "slide":  "OpenJDK Context",
+                      "content":  "I found the article you asked for. That explains a OpenJDK bug fix.",
+                      "mediaColumns":  2,
+                      "media":  [
+                                    {
+                                        "type":  "iframe",
+                                        "src":  "assets/chatsim/openjdk-issue-context.html",
+                                        "title":  "OpenJDK issue chatter",
+                                        "caption":  "OpenJDK issue chatter"
+                                    },
+                                    {
+                                        "type":  "iframe",
+                                        "src":  "assets/chatsim/questdb-proof-context.html",
+                                        "title":  "QuestDB article and published proof",
+                                        "caption":  "QuestDB article and published proof"
+                                    }
+                                ]
+                  },
+                  {
+                      "role":  "user",
+                      "stepNumber":  30,
+                      "content":  "Show the code from before the bug fix."
+                  },
+                  {
+                      "role":  "assistant",
+                      "stepNumber":  31,
+                      "slide":  "OpenJDK Old Path",
+                      "presentationStyle":  "popup",
+                      "deferMediaUntilSpeechDone":  true,
+                      "content":  "This C++ snippet is the old OpenJDK Linux implementation behind getCurrentThreadUserTime(), before the fix discussed in the article.",
+                      "code":  [
+                                   {
+                                       "caption":  "Old OpenJDK path",
+                                       "language":  "cpp",
+                                       "repo":  "openjdk/jdk",
+                                       "content":  "static jlong user_thread_cpu_time(Thread *thread) {\n  pid_t  tid = thread-\u003eosthread()-\u003ethread_id();\n  char *s;\n  char stat[2048];\n  size_t statlen;\n  char proc_name[64];\n  int count;\n  long sys_time, user_time;\n  char cdummy;\n  int idummy;\n  long ldummy;\n  FILE *fp;\n\n  os::snprintf_checked(proc_name, 64, \"/proc/self/task/%d/stat\", tid);\n  fp = os::fopen(proc_name, \"r\");\n  if (fp == nullptr) return -1;\n  statlen = fread(stat, 1, 2047, fp);\n  stat[statlen] = \u0027\\0\u0027;\n  fclose(fp);\n\n  s = strrchr(stat, \u0027)\u0027);\n  if (s == nullptr) return -1;\n\n  // Skip blank chars\n  do { s++; } while (s \u0026\u0026 isspace((unsigned char) *s));\n\n  count = sscanf(s,\"%c %d %d %d %d %d %lu %lu %lu %lu %lu %lu %lu\",\n                 \u0026cdummy, \u0026idummy, \u0026idummy, \u0026idummy, \u0026idummy, \u0026idummy,\n                 \u0026ldummy, \u0026ldummy, \u0026ldummy, \u0026ldummy, \u0026ldummy,\n                 \u0026user_time, \u0026sys_time);\n  if (count != 13) return -1;\n\n  return (jlong)user_time * (1000000000 / os::Posix::clock_tics_per_second());\n}",
+                                       "file":  "src/hotspot/os/linux/os_linux.cpp"
+                                   }
+                               ],
+                      "openCodeFullscreenOnAdvance":  true
+                  },
+                  {
+                      "role":  "user",
+                      "stepNumber":  32,
+                      "content":  "Label the waste type."
+                  },
+                  {
+                      "role":  "assistant",
+                      "stepNumber":  33,
+                      "slide":  "OpenJDK Old Path",
+                      "presentationStyle":  "popup",
+                      "deferMediaUntilSpeechDone":  true,
+                      "openCodeFullscreenOnAdvance":  true,
+                      "content":  "Using your theoretical model. the top 3 waste points in this original code are procfs open, procfs read, and cpu times string parse.",
+                      "code":  [
+                                   {
+                                       "file":  "src/hotspot/os/linux/os_linux.cpp",
+                                       "intro":  "Same helper path, now annotated with the theoretical model as illustrative aggregated work rather than direct hardware measurement.",
+                                       "why":  "The top 3 waste points are the file open path, the procfs read path, and the final sscanf parse path. Each one repeats on every metric lookup.",
+                                       "repo":  "openjdk/jdk",
+                                       "language":  "cpp",
+                                       "content":  "static jlong user_thread_cpu_time(Thread *thread) {\n  pid_t  tid = thread-\u003eosthread()-\u003ethread_id();\n  char *s;\n  char stat[2048];\n  size_t statlen;\n  char proc_name[64];\n  int count;\n  long sys_time, user_time;\n  char cdummy;\n  int idummy;\n  long ldummy;\n  FILE *fp;\n\n  os::snprintf_checked(proc_name, 64, \"/proc/self/task/%d/stat\", tid);\n  fp = os::fopen(proc_name, \"r\");\n  // Top waste 1 over 100,000,000 calls: about 210,000,000,000 uOps | about 81 mWh\n  // Aggregate effect: path lookup, open, VFS setup, procfs entry resolution, and kernel control work.\n  if (fp == nullptr) return -1;\n  statlen = fread(stat, 1, 2047, fp);\n  // Top waste 2 over 100,000,000 calls: about 360,000,000,000 uOps | about 138 mWh\n  // Aggregate effect: procfs text generation, kernel copy to userspace, and cache traffic.\n  stat[statlen] = \u0027\\0\u0027;\n  fclose(fp);\n\n  s = strrchr(stat, \u0027)\u0027);\n  if (s == nullptr) return -1;\n\n  // Skip blank chars\n  do { s++; } while (s \u0026\u0026 isspace((unsigned char) *s));\n\n  count = sscanf(s,\"%c %d %d %d %d %d %lu %lu %lu %lu %lu %lu %lu\",\n                 \u0026cdummy, \u0026idummy, \u0026idummy, \u0026idummy, \u0026idummy, \u0026idummy,\n                 \u0026ldummy, \u0026ldummy, \u0026ldummy, \u0026ldummy, \u0026ldummy,\n                 \u0026user_time, \u0026sys_time);\n  // Top waste 3 over 100,000,000 calls: about 430,000,000,000 uOps | about 165 mWh\n  // Aggregate effect: delimiter scan, field parsing, integer conversion, branching, and userspace text handling.\n  if (count != 13) return -1;\n\n  return (jlong)user_time * (1000000000 / os::Posix::clock_tics_per_second());\n}\n\n// Rollup for this old path over 100,000,000 calls:\n// Top 3 combined: about 1,000,000,000,000 uOps | about 384 mWh = 0.384 Wh = 0.000384 kWh",
+                                       "caption":  "Top 3 modeled waste points in the old OpenJDK path",
+                                       "energySaving":  "The old path spends most modeled work on open, read, and parse before returning the answer."
+                                   }
+                               ]
+                  },
+                  {
+                      "role":  "assistant",
+                      "stepNumber":  34,
+                      "slide":  "OpenJDK Flamegraph",
+                      "presentationStyle":  "popup",
+                      "content":  "Developer test 1.",
+                      "media":  [
+                                    {
+                                        "type":  "image",
+                                        "src":  "assets/flame1.png",
+                                        "caption":  "Flamegraph 1"
+                                    }
+                                ],
+                      "openImageFullscreenOnAdvance":  true
+                  },
+                  {
+                      "role":  "assistant",
+                      "stepNumber":  35,
+                      "slide":  "OpenJDK Flamegraph",
+                      "presentationStyle":  "popup",
+                      "content":  "Developer test 2.",
+                      "media":  [
+                                    {
+                                        "type":  "image",
+                                        "src":  "assets/flame2.png",
+                                        "caption":  "Flamegraph 2"
+                                    }
+                                ],
+                      "openImageFullscreenOnAdvance":  true
+                  },
+                  {
+                      "role":  "assistant",
+                      "stepNumber":  36,
+                      "slide":  "OpenJDK Flamegraph",
+                      "presentationStyle":  "popup",
+                      "content":  "Developer test 3.",
+                      "media":  [
+                                    {
+                                        "type":  "image",
+                                        "src":  "assets/flame3.png",
+                                        "caption":  "Flamegraph 3"
+                                    }
+                                ],
+                      "openImageFullscreenOnAdvance":  true
+                  },
+                  {
+                      "role":  "user",
+                      "stepNumber":  37,
+                      "content":  "Now show the improved code after bugfix."
+                  },
+                  {
+                      "role":  "assistant",
+                      "stepNumber":  38,
+                      "slide":  "OpenJDK New Path",
+                      "openCodeFullscreenOnAdvance":  true,
+                      "content":  "After, OpenJDK gets a thread clockid, flips it to VIRT, and calls clock_gettime for user time directly.",
+                      "code":  [
+                                   {
+                                       "intro":  "The fixed helper uses a Linux CPU clock id and a direct clock query instead of procfs parsing.",
+                                       "caption":  "Improved OpenJDK path",
+                                       "language":  "cpp",
+                                       "repo":  "openjdk/jdk",
+                                       "content":  "static bool get_thread_clockid(Thread* thread, clockid_t* clockid, bool total) {\n    constexpr clockid_t CLOCK_TYPE_MASK = 3;\n    constexpr clockid_t CPUCLOCK_VIRT = 1;\n    int rc = pthread_getcpuclockid(thread-\u003eosthread()-\u003epthread_id(), clockid);\n    if (!total) {\n        *clockid = (*clockid \u0026 ~CLOCK_TYPE_MASK) | CPUCLOCK_VIRT;\n    }\n    return rc == 0;\n}\n\nstatic jlong user_thread_cpu_time(Thread *thread) {\n    clockid_t clockid;\n    bool success = get_thread_clockid(thread, \u0026clockid, false);\n    return success ? os::Linux::thread_cpu_time(clockid) : -1;\n}",
+                                       "file":  "src/hotspot/os/linux/os_linux.cpp"
+                                   }
+                               ]
+                  },
+                  {
+                      "role":  "user",
+                      "stepNumber":  39,
+                      "content":  "Estimate with the model."
+                  },
+                  {
+                      "role":  "assistant",
+                      "stepNumber":  40,
+                      "slide":  "OpenJDK Before vs After",
+                      "presentationStyle":  "popup",
+                      "content":  "The article benchmark shows about 11.186 uOps before and 0.279 uOps after, around 40x faster on average.",
+                      "media":  [
+                                    {
+                                        "type":  "image",
+                                        "src":  "assets/perf.png",
+                                        "caption":  "OpenJDK before vs after"
+                                    }
+                                ]
+                  },
+                  {
+                      "role":  "assistant",
+                      "stepNumber":  41,
+                      "slide":  "OpenJDK Before vs After",
+                      "content":  "At 100 watts, that is about 0.000311 mWh before and 0.00000775 after. Roughly 3.2 versus 129 billion calls per kWh."
+                  },
+                  {
+                      "role":  "user",
+                      "stepNumber":  42,
+                      "content":  "Now find a bottleneck example that shows the power of scaling."
+                  },
+                  {
+                      "role":  "assistant",
+                      "stepNumber":  43,
+                      "slide":  "JSONObject.toString()",
+                      "presentationStyle":  "popup",
+                      "content":  "JSON-java JSONObject.toString() is a strong match: same contract, less helper overhead, strong measured improvement.",
+                      "mediaColumns":  2,
+                      "media":  [
+                                    {
+                                        "type":  "iframe",
+                                        "src":  "assets/chatsim/json-pr-context.html",
+                                        "title":  "JSON-java PR #867",
+                                        "caption":  "JSON-java PR #867"
+                                    },
+                                    {
+                                        "type":  "iframe",
+                                        "src":  "assets/chatsim/json-commits-context.html",
+                                        "title":  "JSON-java commits",
+                                        "caption":  "JSON-java commits"
+                                    }
+                                ]
+                  },
+                  {
+                      "role":  "user",
+                      "stepNumber":  44,
+                      "content":  "Trace what changed."
+                  },
+                  {
+                      "role":  "popup",
+                      "stepNumber":  45,
+                      "slide":  "JSONObject.toString()",
+                      "content":  "JSONObject.toString(int indentFactor) formats JSON so humans can read nested data. indentFactor controls spaces per level: 2 means child fields indent 2, grandchildren 4."
+                  },
+                  {
+                      "role":  "assistant",
+                      "stepNumber":  46,
+                      "slide":  "JSONObject.toString()",
+                      "presentationStyle":  "popup",
+                      "deferMediaUntilSpeechDone":  true,
+                      "openCodeFullscreenOnAdvance":  true,
+                      "content":  "StringWriter uses synchronized StringBuffer. StringBuilderWriter removes lock cost, and initial sizing reduces growth copies, allocations, and later GC cleanup.",
+                      "code":  [
+                                   {
+                                       "language":  "java",
+                                       "caption":  "JSON diff",
+                                       "repo":  "stleary/JSON-java",
+                                       "file":  "src/main/java/org/json/JSONObject.java",
+                                       "intro":  "Same method contract, cheaper helper path.",
+                                       "content":  "public String toString(int indentFactor) throws JSONException {\n-    Writer w = new StringWriter();\n-    // Before: generic writer, more helper overhead on every call\n-    // About 7.3 mWh over 100,000 calls\n+    int initialSize = map.size() * 6;\n+    // After: starts closer to the needed size\n+    // About 2.7 mWh effect over 100,000 calls\n+    Writer w = new StringBuilderWriter(Math.max(initialSize, 16));\n+    // After: cheaper writer with less overhead and fewer growth steps\n+    // Avoids about 7.3 mWh over 100,000 calls versus the heavier writer path\n     return this.write(w, indentFactor, 0).toString();\n+    // Before total path: about 46 mWh over 100,000 calls\n+    // After total path: about 35.9 mWh\n }"
+                                   }
+                               ]
+                  },
+                  {
+                      "role":  "assistant",
+                      "stepNumber":  47,
+                      "slide":  "JSONObject.toString()",
+                      "content":  "Scale matters: larger JSON means more characters, deeper nesting, more buffer growth, more copying, more uOps, and more modeled mWh."
+                  },
+                  {
+                      "role":  "popup",
+                      "stepNumber":  48,
+                      "slide":  "JSONObject.toString()",
+                      "content":  "Runtime drops from 120 to 81 cumulative CPU-hours. On a 32-thread server the wall-clock time drops from 3.75 hours to 2.53 hours. At 250 Watts average server IT load, energy drops from about 0.94 kWh to 0.63 kWh, saving about 0.31 kWh."
+                  },
+                  {
+                      "role":  "assistant",
+                      "stepNumber":  49,
+                      "slide":  "JSONObject.toString()",
+                      "content":  "At 200 grams CO2e per kWh, that modeled saving is about 79 grams CO2e per terabyte serialized."
+                  },
+                  {
+                      "role":  "assistant",
+                      "stepNumber":  50,
+                      "slide":  "JSONObject.toString()",
+                      "content":  "Real systems hit terabyte-scale JSON across many logs, rows, or objects, not one giant document. Elasticsearch, OpenSearch, BigQuery, and PostgreSQL JSONB fit better."
+                  },
+                  {
+                      "role":  "user",
+                      "stepNumber":  51,
+                      "content":  "Now find a waiting-pattern example."
+                  },
+                  {
+                      "role":  "assistant",
+                      "stepNumber":  52,
+                      "slide":  "Commons IO Tailer",
+                      "presentationStyle":  "popup",
+                      "content":  "Commons IO Tailer is used for following a file as it grows, usually a log file. It has the clearest waiting-pattern case.",
+                      "mediaColumns":  2,
+                      "media":  [
+                                    {
+                                        "type":  "iframe",
+                                        "src":  "assets/chatsim/commons-pr-context.html",
+                                        "title":  "Commons IO PR context",
+                                        "caption":  "Commons IO PR #2"
+                                    },
+                                    {
+                                        "type":  "image",
+                                        "src":  "assets/chatsim/waste-classes.svg",
+                                        "caption":  "Waiting-pattern framing"
+                                    }
+                                ]
+                  },
+                  {
+                      "role":  "assistant",
+                      "stepNumber":  53,
+                      "slide":  "Commons IO Tailer",
+                      "content":  "This loop tails growing logs for near-real-time updates, but when little changes, repeated wakeups and checks waste energy discovering almost nothing.",
+                      "code":  [
+                                   {
+                                       "language":  "java",
+                                       "caption":  "Annotated waiting-pattern energy view",
+                                       "repo":  "apache/commons-io",
+                                       "file":  "src/main/java/org/apache/commons/io/input/Tailer.java",
+                                       "intro":  "The loop itself is simple. The waste comes from running it forever when almost nothing changes.",
+                                       "why":  "Wakeups, size checks, and sleeping threads add up when many watchers sit mostly idle.",
+                                       "energySaving":  "Wakeup reduction and less idle machinery matter more than one-loop cost",
+                                       "content":  "while (getRun()) {\n    final boolean newer = tailable.isNewer(last);\n    final long length = tailable.size();\n    ThreadUtils.sleep(delayDuration);\n}\n// Mostly control-plane work. | idle ratio high | wakeups frequent"
+                                   }
+                               ]
+                  },
+                  {
+                      "role":  "assistant",
+                      "stepNumber":  54,
+                      "slide":  "Commons IO Tailer",
+                      "content":  "A better Java replacement is WatchService: the thread blocks, the operating system watches the file, and work starts only on change."
+                  },
+                  {
+                      "role":  "assistant",
+                      "stepNumber":  55,
+                      "slide":  "Commons IO Tailer",
+                      "content":  "That means no polling loop, no repeated stat checks, and near-zero CPU while waiting. Linux uses inotify; Windows uses ReadDirectoryChangesW."
+                  },
+                  {
+                      "role":  "assistant",
+                      "stepNumber":  56,
+                      "slide":  "Carbon Scaling",
+                      "presentationStyle":  "popup",
+                      "deferMediaUntilSpeechDone":  true,
+                      "openImageFullscreenOnAdvance":  true,
+                      "content":  "Once scaled to kWh, apply grid carbon intensity to estimate CO2e. Repeated waste can become kilograms or metric tons over time.",
+                      "media":  [
+                                    {
+                                        "type":  "image",
+                                        "src":  "assets/chatsim/fleet-scale.svg",
+                                        "caption":  "Per call -\u003e workload -\u003e fleet -\u003e year"
+                                    }
+                                ]
+                  },
+                  {
+                      "role":  "user",
+                      "stepNumber":  57,
+                      "content":  "State the key lesson."
+                  },
+                  {
+                      "role":  "popup",
+                      "stepNumber":  58,
+                      "slide":  "Lesson",
+                      "content":  "Tiny code waste is not tiny once it becomes the default behavior of a whole platform."
+                  },
+                  {
+                      "role":  "user",
+                      "stepNumber":  59,
+                      "content":  "Give the final line."
+                  },
+                  {
+                      "role":  "assistant",
+                      "stepNumber":  60,
+                      "content":  "Wilco, give us your final thoughts. Thank you for your patience with the human in the loop."
+                  }
+              ]
+}
