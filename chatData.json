@@ -116,11 +116,12 @@
             "content": "Where does this start?"
         },
         {
-            "role": "assistant",
+            "role": "popup",
             "stepNumber": 16,
             "slide": "Opening Visual",
-            "presentationStyle": "popup",
             "popupFullscreenMedia": true,
+            "deferMediaUntilSpeechDone": true,
+            "openImageFullscreenOnAdvance": true,
             "content": "It starts with a visual cue. Before code, you are invited to notice the act of looking closely.",
             "media": [
                 {
@@ -319,7 +320,7 @@
             "role": "assistant",
             "stepNumber": 38,
             "slide": "Cloud Waste Example",
-            "content": "This becomes concrete with AWS. Waste is not abstract here either. It shows up in the infrastructure choices teams make every day.",
+            "content": "This becomes concrete with Azure. Waste is not abstract here either. It shows up in the infrastructure choices teams make every day.",
             "media": [
                 {
                     "type": "image",
@@ -355,7 +356,7 @@
             "role": "assistant",
             "stepNumber": 42,
             "slide": "Low Utilization Costs",
-            "content": "At 25% utilization, a shared 16-vCPU AWS instance uses about 340 kWh per year, while a dedicated on-prem 16-core server uses about 1,600 kWh per year. The difference is sharing: AWS spreads baseline cost across many tenants.",
+            "content": "At 25% utilization, a shared Azure D2als v6 instance (2 vCPUs, 4 GiB RAM) can be attributed roughly 300–400 kWh per year, while an equivalently modern dedicated on-premises server based on similar-generation hardware typically uses about 1,200–1,600 kWh per year. The difference is sharing: Azure spreads the baseline energy and facility overhead of the host across many tenants.",
             "media": [
                 {
                     "type": "image",
@@ -373,7 +374,7 @@
             "role": "assistant",
             "stepNumber": 44,
             "slide": "Higher Utilization",
-            "content": "At 75% utilization, a shared 16-vCPU AWS instance uses about 640 kWh per year, while a dedicated on-prem 16-core server is around 2,700 kWh per year.",
+            "content": "At 75% utilization, a shared Azure D2als v6 instance (2 vCPUs, 4 GiB RAM) can be attributed roughly 600–800 kWh per year, while an equivalently modern dedicated on-premises server based on similar-generation hardware typically uses about 2,400–3,200 kWh per year. The difference is sharing: Azure spreads the baseline energy and facility overhead of the host across many tenants.",
             "media": [
                 {
                     "type": "image",
@@ -391,7 +392,7 @@
             "role": "assistant",
             "stepNumber": 46,
             "slide": "Consolidation Impact",
-            "content": "Consolidating three 25% VMs into one 75% VM can save roughly two full instance costs, or about 13,000 euros per year with m5.4xlarge on-demand pricing.",
+            "content": "Consolidating three 25% utilized Azure D2als v6 instances (2 vCPUs, 4 GiB RAM) into one 75% utilized VM can eliminate roughly two full instance costs, saving about €1,480 per year based on €61.5911/month pricing.",
             "media": [
                 {
                     "type": "image",
@@ -425,48 +426,26 @@
         {
             "role": "user",
             "stepNumber": 51,
-            "content": "Can a tiny code change really matter?"
-        },
-        {
-            "role": "user",
-            "stepNumber": 52,
-            "content": "How do I turn insights into backlog items?"
-        },
-        {
-            "role": "assistant",
-            "stepNumber": 53,
-            "slide": "Backlog Framing",
-            "content": "Map each waste item to yearly cost, energy, CO2, and performance impact. Frame it as an outcome, not implementation. Example: reduce infrastructure cost by consolidating underused workloads.",
-            "media": [
-                {
-                    "type": "image",
-                    "src": "assets/image64.png",
-                    "caption": "Backlog Framing"
-                }
-            ]
-        },
-        {
-            "role": "user",
-            "stepNumber": 54,
             "content": "What actions come first?"
         },
         {
             "role": "assistant",
-            "stepNumber": 55,
+            "stepNumber": 52,
             "slide": "Research Question",
             "content": "Can AI help us find code patterns that probably waste energy before we spend time measuring everything directly?"
         },
         {
             "role": "user",
-            "stepNumber": 56,
+            "stepNumber": 53,
             "content": "Before I answer that, I want to explain a paradox."
         },
         {
             "role": "popup",
-            "stepNumber": 57,
+            "stepNumber": 54,
             "slide": "Research Question",
-            "deferMediaUntilSpeechDone": true,
             "popupFullscreenMedia": true,
+            "deferMediaUntilSpeechDone": true,
+            "openImageFullscreenOnAdvance": true,
             "content": "I got you...",
             "media": [
                 {
@@ -478,7 +457,7 @@
         },
         {
             "role": "assistant",
-            "stepNumber": 58,
+            "stepNumber": 55,
             "slide": "Research Question",
             "deferMediaUntilSpeechDone": true,
             "content": "Wilco, why did we watch this?",
@@ -494,24 +473,24 @@
         },
         {
             "role": "user",
-            "stepNumber": 59,
+            "stepNumber": 56,
             "content": "If you can estimate energy, can you also estimate digital waste?"
         },
         {
             "role": "assistant",
-            "stepNumber": 60,
+            "stepNumber": 57,
             "slide": "Waste Classes",
             "presentationStyle": "popup",
             "content": "I can classify waste as **underutilization**, **waiting patterns**, or **bottlenecks**, then test whether the evidence supports a useful estimate."
         },
         {
             "role": "user",
-            "stepNumber": 61,
+            "stepNumber": 58,
             "content": "Map those categories to something concrete."
         },
         {
             "role": "assistant",
-            "stepNumber": 62,
+            "stepNumber": 59,
             "slide": "Waste Classes",
             "content": "Here is the explainer.",
             "media": [
@@ -526,12 +505,12 @@
         },
         {
             "role": "user",
-            "stepNumber": 63,
+            "stepNumber": 60,
             "content": "Here is the theoretical model in one line: \"1 Hz == 1 uOps, && 1 core == 1 Ghz && 1 core == 1.2 Volt. And respect Dynamic Voltage and Frequency Scaling\"."
         },
         {
             "role": "assistant",
-            "stepNumber": 64,
+            "stepNumber": 61,
             "slide": "Theoretical Model",
             "presentationStyle": "popup",
             "content": "From now, I will use your decision model",
@@ -546,7 +525,7 @@
         },
         {
             "role": "assistant",
-            "stepNumber": 65,
+            "stepNumber": 62,
             "slide": "Theoretical Model",
             "presentationStyle": "popup",
             "deferMediaUntilSpeechDone": true,
@@ -565,12 +544,12 @@
         },
         {
             "role": "user",
-            "stepNumber": 66,
+            "stepNumber": 63,
             "content": "Can you show how CPU activity becomes an energy estimate?"
         },
         {
             "role": "assistant",
-            "stepNumber": 67,
+            "stepNumber": 64,
             "slide": "CPU Activity",
             "content": "Here, two cores work hard while four sit idle.",
             "media": [
@@ -584,7 +563,7 @@
         },
         {
             "role": "assistant",
-            "stepNumber": 68,
+            "stepNumber": 65,
             "slide": "CPU Activity",
             "content": "When every core runs flat out, the chip works harder, gets hotter.",
             "media": [
@@ -598,7 +577,7 @@
         },
         {
             "role": "assistant",
-            "stepNumber": 69,
+            "stepNumber": 66,
             "slide": "DVFS",
             "content": "CPU Cores also change speed dynamically. Lower frequency often means less work.",
             "media": [
@@ -612,7 +591,7 @@
         },
         {
             "role": "assistant",
-            "stepNumber": 70,
+            "stepNumber": 67,
             "slide": "Power Model",
             "content": "Voltage changes too. With frequency.",
             "media": [
@@ -626,7 +605,7 @@
         },
         {
             "role": "assistant",
-            "stepNumber": 71,
+            "stepNumber": 68,
             "slide": "Energy Model",
             "content": "Power over time becomes energy.",
             "media": [
@@ -640,18 +619,18 @@
         },
         {
             "role": "popup",
-            "stepNumber": 72,
+            "stepNumber": 69,
             "slide": "OpenJDK ThreadMXBean",
             "content": "Finally, real code. Yay!"
         },
         {
             "role": "user",
-            "stepNumber": 73,
+            "stepNumber": 70,
             "content": "Can you show the prepared OpenJDK example."
         },
         {
             "role": "assistant",
-            "stepNumber": 74,
+            "stepNumber": 71,
             "slide": "OpenJDK Context",
             "content": "I found the article you asked for. That explains a OpenJDK bug fix.",
             "mediaColumns": 2,
@@ -672,12 +651,12 @@
         },
         {
             "role": "user",
-            "stepNumber": 75,
+            "stepNumber": 72,
             "content": "Show the code from before the bug fix."
         },
         {
             "role": "assistant",
-            "stepNumber": 76,
+            "stepNumber": 73,
             "slide": "OpenJDK Old Path",
             "presentationStyle": "popup",
             "deferMediaUntilSpeechDone": true,
@@ -694,12 +673,12 @@
         },
         {
             "role": "user",
-            "stepNumber": 77,
+            "stepNumber": 74,
             "content": "Label the waste type."
         },
         {
             "role": "assistant",
-            "stepNumber": 78,
+            "stepNumber": 75,
             "slide": "OpenJDK Old Path",
             "presentationStyle": "popup",
             "deferMediaUntilSpeechDone": true,
@@ -718,7 +697,7 @@
         },
         {
             "role": "assistant",
-            "stepNumber": 79,
+            "stepNumber": 76,
             "slide": "OpenJDK Flamegraph",
             "presentationStyle": "popup",
             "content": "Developer test 1.",
@@ -733,7 +712,7 @@
         },
         {
             "role": "assistant",
-            "stepNumber": 80,
+            "stepNumber": 77,
             "slide": "OpenJDK Flamegraph",
             "presentationStyle": "popup",
             "content": "Developer test 2.",
@@ -748,7 +727,7 @@
         },
         {
             "role": "assistant",
-            "stepNumber": 81,
+            "stepNumber": 78,
             "slide": "OpenJDK Flamegraph",
             "presentationStyle": "popup",
             "content": "Developer test 3.",
@@ -763,12 +742,12 @@
         },
         {
             "role": "user",
-            "stepNumber": 82,
+            "stepNumber": 79,
             "content": "Now show the improved code after bugfix."
         },
         {
             "role": "assistant",
-            "stepNumber": 83,
+            "stepNumber": 80,
             "slide": "OpenJDK New Path",
             "openCodeFullscreenOnAdvance": true,
             "content": "After, OpenJDK gets a thread clockid, flips it to VIRT, and calls clock_gettime for user time directly.",
@@ -784,12 +763,12 @@
         },
         {
             "role": "user",
-            "stepNumber": 84,
+            "stepNumber": 81,
             "content": "Estimate with the model."
         },
         {
             "role": "assistant",
-            "stepNumber": 85,
+            "stepNumber": 82,
             "slide": "OpenJDK Before vs After",
             "presentationStyle": "popup",
             "content": "The article benchmark shows about 11.186 uOps before and 0.279 uOps after, around 40x faster on average.",
@@ -803,18 +782,18 @@
         },
         {
             "role": "assistant",
-            "stepNumber": 86,
+            "stepNumber": 83,
             "slide": "OpenJDK Before vs After",
             "content": "At 100 watts, that is about 0.000311 mWh before and 0.00000775 after. Roughly 3.2 versus 129 billion calls per kWh."
         },
         {
             "role": "user",
-            "stepNumber": 87,
+            "stepNumber": 84,
             "content": "Now find a bottleneck example that shows the power of scaling."
         },
         {
             "role": "assistant",
-            "stepNumber": 88,
+            "stepNumber": 85,
             "slide": "JSONObject.toString()",
             "presentationStyle": "popup",
             "content": "JSON-java JSONObject.toString() is a strong match: same contract, less helper overhead, strong measured improvement.",
@@ -836,18 +815,18 @@
         },
         {
             "role": "user",
-            "stepNumber": 89,
+            "stepNumber": 86,
             "content": "Trace what changed."
         },
         {
             "role": "popup",
-            "stepNumber": 90,
+            "stepNumber": 87,
             "slide": "JSONObject.toString()",
             "content": "JSONObject.toString(int indentFactor) formats JSON so humans can read nested data. indentFactor controls spaces per level: 2 means child fields indent 2, grandchildren 4."
         },
         {
             "role": "assistant",
-            "stepNumber": 91,
+            "stepNumber": 88,
             "slide": "JSONObject.toString()",
             "presentationStyle": "popup",
             "deferMediaUntilSpeechDone": true,
@@ -866,36 +845,36 @@
         },
         {
             "role": "assistant",
-            "stepNumber": 92,
+            "stepNumber": 89,
             "slide": "JSONObject.toString()",
             "content": "Scale matters: larger JSON means more characters, deeper nesting, more buffer growth, more copying, more uOps, and more modeled mWh."
         },
         {
             "role": "popup",
-            "stepNumber": 93,
+            "stepNumber": 90,
             "slide": "JSONObject.toString()",
             "content": "Runtime drops from 120 to 81 cumulative CPU-hours. On a 32-thread server the wall-clock time drops from 3.75 hours to 2.53 hours. At 250 Watts average server IT load, energy drops from about 0.94 kWh to 0.63 kWh, saving about 0.31 kWh."
         },
         {
             "role": "assistant",
-            "stepNumber": 94,
+            "stepNumber": 91,
             "slide": "JSONObject.toString()",
             "content": "At 200 grams CO2e per kWh, that modeled saving is about 79 grams CO2e per terabyte serialized."
         },
         {
             "role": "assistant",
-            "stepNumber": 95,
+            "stepNumber": 92,
             "slide": "JSONObject.toString()",
             "content": "Real systems hit terabyte-scale JSON across many logs, rows, or objects, not one giant document. Elasticsearch, OpenSearch, BigQuery, and PostgreSQL JSONB fit better."
         },
         {
             "role": "user",
-            "stepNumber": 96,
+            "stepNumber": 93,
             "content": "Now find a waiting-pattern example."
         },
         {
             "role": "assistant",
-            "stepNumber": 97,
+            "stepNumber": 94,
             "slide": "Commons IO Tailer",
             "presentationStyle": "popup",
             "content": "Commons IO Tailer is used for following a file as it grows, usually a log file. It has the clearest waiting-pattern case.",
@@ -916,7 +895,7 @@
         },
         {
             "role": "assistant",
-            "stepNumber": 98,
+            "stepNumber": 95,
             "slide": "Commons IO Tailer",
             "content": "This loop tails growing logs for near-real-time updates, but when little changes, repeated wakeups and checks waste energy discovering almost nothing.",
             "code": [
@@ -934,19 +913,19 @@
         },
         {
             "role": "assistant",
-            "stepNumber": 99,
+            "stepNumber": 96,
             "slide": "Commons IO Tailer",
             "content": "A better Java replacement is WatchService: the thread blocks, the operating system watches the file, and work starts only on change."
         },
         {
             "role": "assistant",
-            "stepNumber": 100,
+            "stepNumber": 97,
             "slide": "Commons IO Tailer",
             "content": "That means no polling loop, no repeated stat checks, and near-zero CPU while waiting. Linux uses inotify; Windows uses ReadDirectoryChangesW."
         },
         {
             "role": "assistant",
-            "stepNumber": 101,
+            "stepNumber": 98,
             "slide": "Carbon Scaling",
             "presentationStyle": "popup",
             "deferMediaUntilSpeechDone": true,
@@ -962,73 +941,73 @@
         },
         {
             "role": "assistant",
-            "stepNumber": 102,
+            "stepNumber": 99,
             "slide": "Quick Wins",
             "content": "Start with safe quick wins. Not a platform revolution, but cleanup, consolidation, and right-sizing."
         },
         {
             "role": "user",
-            "stepNumber": 103,
+            "stepNumber": 100,
             "content": "How do teams make room for that work?"
         },
         {
             "role": "assistant",
-            "stepNumber": 104,
+            "stepNumber": 101,
             "slide": "Capacity",
             "content": "Give it room to happen: reserve sprint capacity or a quarterly target. Otherwise urgent delivery will always win."
         },
         {
             "role": "user",
-            "stepNumber": 105,
+            "stepNumber": 102,
             "content": "Who should own it?"
         },
         {
             "role": "assistant",
-            "stepNumber": 106,
+            "stepNumber": 103,
             "slide": "Ownership",
             "content": "No owner means no living backlog item. Add labels, ownership, and a reason to revisit the work."
         },
         {
             "role": "user",
-            "stepNumber": 107,
+            "stepNumber": 104,
             "content": "What decision framework should I use?"
         },
         {
             "role": "assistant",
-            "stepNumber": 108,
+            "stepNumber": 105,
             "slide": "Decision Frames",
             "content": "Use three frames: value, cost, and exception. Ask who uses it, what it costs, and whether the trade-off is intentional."
         },
         {
             "role": "user",
-            "stepNumber": 109,
+            "stepNumber": 106,
             "content": "What choices does that lead to?"
         },
         {
             "role": "assistant",
-            "stepNumber": 110,
+            "stepNumber": 107,
             "slide": "Choices",
             "content": "Then choose: remove it, combine it, calibrate it, or consciously accept it with a named owner."
         },
         {
             "role": "user",
-            "stepNumber": 111,
+            "stepNumber": 108,
             "content": "How should I start after this talk?"
         },
         {
             "role": "assistant",
-            "stepNumber": 112,
+            "stepNumber": 109,
             "slide": "Get Started",
             "content": "Start with one application. Ask what you already do, what blocks progress, and which system has the biggest user, compute, or cost impact."
         },
         {
             "role": "user",
-            "stepNumber": 113,
+            "stepNumber": 110,
             "content": "What should I walk away with?"
         },
         {
             "role": "popup",
-            "stepNumber": 114,
+            "stepNumber": 111,
             "content": "You can now spot digital waste like Freek spots birds. You can discuss workload quality, inspect code differently, and turn that insight into practical action. Spotting digital waste in code gives you energy because you can do something about it."
         }
     ]
